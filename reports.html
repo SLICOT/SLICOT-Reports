@@ -1,0 +1,1011 @@
+<h3>WGS/NICONET Reports and Reprint Archive</h3>
+
+		<hr noshade color="#666666">
+		<p>This archive contains collective reports of WGS/NICONET members related to the
+		development of the SLICOT library as well as papers on related topics as numerical algorithms
+		implemented in SLICOT, numerical software for systems and control, and computer aided control systems design (CACSD).</p>
+
+		<h4>1. SLICOT Tutorial</h4>
+		<p><dl>
+			<hr noshade color="#666666">
+			<dt><a href="slicot_tutorial.pdf"><b>Paul Van Dooren and Peter Benner, organizers</b></a><br>
+			 Tutorial Workshop<em> "Advanced Computational Tools for Computer-Aided Control Systems Design (CACSD)"</em> 
+                        <br>European Control Conference, 1-4 September 2003, Cambridge, UK 			<dd>
+			 </dl></p>
+		<h4>2. WGS/NICONET Reports</h4>
+		<p>
+		<dl>
+			<hr noshade color="#666666">
+			<dt><a href="SLWN2014-1.pdf"><b>Martin Köhler, and Jens Saak</b><br>
+			<em>On BLAS Level-3 Implementations of Common Solvers for
+                        (Quasi-) Triangular Generalized Lyapunov Equations</em><br>
+SLICOT Working Note 2014-1: September 2014.</a>
+			<dd><br>
+			<dd> The solutions of Lyapunov and generalized Lyapunov equations are a key player in many applications in 
+	                systems and control theory. Their stable numerical computation, when the full solution is sought, is 
+        	        considered solved since the seminal work of Bartels and Stewart. A number of variants of their algorithm
+                	have been proposed, but none of them goes beyond BLAS level-2 style implementation. On modern 
+	                computers, however, the formulation of BLAS level-3 type implementations is crucial to enable optimal 
+        	        usage of cache hierarchies and modern block scheduling methods based on directed acyclic graphs describing 
+                	the interdependence of single block computations. Our contribution closes this gap by a transformation 
+                	of the aforementioned level-2 variants to level-3 versions and a comparison on a standard multicore machine.
+</dl><hr noshade color="#666666">
+		
+		<dl>
+			<hr noshade color="#666666">
+			<dt><a href="SLWN2013-3.pdf"><b>Peihong Jiang, and Matthias Voigt</b><br>
+			<em>MB04BV - A FORTRAN 77 Subroutine to Compute the Eigenvectors 
+               	 	Associated to the Purely Imaginary Eigenvalues of
+                	Skew-Hamiltonian/Hamiltonian Matrix Pencils</em><br>
+SLICOT Working Note 2013-3: September 2013.</a>
+			<dd><br>
+			<dd> We implement a structure-preserving numerical algorithm for extracting the eigenvectors associated 
+	                to the purely imaginary eigenvalues of skew-Hamiltonian/Hamiltonian matrix pencils. We compare the new algorithm 
+        	        with the QZ algorithm using random examples with different difficulty. The results show that the new algorithm 
+                	is signicantly faster, more robust, and more accurate, especially for hard examples.
+</dl><hr noshade color="#666666">
+		
+		<dl>
+			<hr noshade color="#666666">
+			<dt><a href="SLWN2010-1.pdf"><b>Zvonimir Bujanovic, and Zlatko Drmac</b><br>
+			<em>How a Numerical Rank Revealing Instability Affects Computer Aided Control System Design</em><br>
+SLICOT Working Note 2010-1: January 2010.</a>
+			<dd><br>
+			<dd> Since numerical libraries are used in engineering design in a variety of industrial applications, it is
+			important that their numerical reliability is the top priority of both the developers of numerical algorithms
+			and users from industry. Following that principle, we have examined a state of the art control library
+			(case study: SLICOT) with respect to use of rank revealing subroutines in computing various canonical
+			decompositions of linear time invariant systems. This issue seems to be critical, with potential for causing
+			numerical catastrophes, because the deployed rank revealing code is prone to severe instabilities, causing
+			completely wrongly computed parameters of systems under analysis. We analyze the SLICOT library
+			in detail and propose modifications of critical parts of the code, based on our recent work published
+			in the ACM Trans. Math. Softw. 35, 2008, where we analyze and solve the problem. The proposed
+			modifications increase numerical reliability of all of the sixty affected subroutines. We recommend that
+			the developers of other control theory numerical libraries examine their codes with respect to the issue
+			discussed in this paper.
+</dl><hr noshade color="#666666">
+		
+		<dl>
+			<hr noshade color="#666666">
+			<dt><a href="SLWN2009-1.pdf"><b>Peter Benner, Daniel Kressner, Vasile Sima, and Andras Varga</b><br>
+			<em>The SLICOT Toolboxes - a Survey</em><br>
+SLICOT Working Note 2009-1: August 2009.</a>
+			<dd><br>
+			<dd> SLICOT is a comprehensive numerical software package for control 
+                systems analysis and design.  While based on highly performant 
+                Fortran routines, MATLAB and Scilab interfaces provide convenient 
+                access for users. In this survey, we summarize the functionality 
+                contained in the three SLICOT toolboxes for (i) basic tasks in 
+                systems and control, (ii) system identification, and (iii) 
+                model reduction.  Several examples illustrate the use of these 
+                toolboxes for addressing frequent computational tasks.
+</dl><hr noshade color="#666666">
+		
+		<dl>
+			<hr noshade color="#666666">
+			<dt><a href="SLWN2004-1.pdf"><b>Martin Slowik, Peter Benner and Vasile Sima</b><br>
+			<em>Evaluation of the Linear Matrix Equation Solvers in SLICOT</em><br>
+SLICOT Working Note 2004-1: September 2004.</a>
+			<dd><br>
+			<dd> We discuss solvers for Sylvester, Lyapunov, and Stein equations
+                that are available in  the SLICOT Library.  These solvers offer improved
+                efficiency, reliability, and functionality compared to corresponding
+                solvers in other computer-aided control system design packages.  
+                The performance of the SLICOT solvers is compared with the 
+                corresponding  MATLAB solvers. This note can also serve as a 
+                guide to the SLICOT and SLICOT-based MATLAB solvers for
+                Linear Matrix Equations.</dl><hr noshade color="#666666">
+		
+<dl>
+  <dt><a href="SLWN2003-1.pdf"><b>Asparuh Markovski, Petko Petkov, Da 
+    Wei Gu, Mihail M. Konstantinov</b><br>
+    <em>Fortran 77 routines for mu-synthesis and H-inf design</em><br>
+    SLICOT Working Note 2003-1: December 2003.</a> 
+  <dd><br>
+  <dd>A set of Fortran 77 subroutines aimed to perform mu-synthesis procedure 
+    via DK iterations or H-inf design alone is presented. The software is intended 
+    for linear, time-invariant, continuous-time systems, but it handles also discrete-time 
+    systems via bilinear transformation. The methods for mu-synthesis and H-inf 
+    design implemented in the routines are briefly described. The subroutines 
+    make use of LAPACK and BLAS libraries and can be easily implemented from MATLAB 
+    by a MEX-file. The subroutines are included in the SLICOT library.
+</dl>
+<hr noshade color="#666666">
+		
+<dl>
+  <dt><a href="SLWN2002-8.pdf"><b>Da Wei Gu, Mihail M. Konstantinov, 
+    Volker Mehrmann, Petko Petkov and Hongguo Xu</b><br>
+    <em>DRCEXC - A collection of Benchmark examples for robust control design 
+    of continuous-time dynamical systems, version 1.0</em><br>
+    SLICOT Working Note 2002-8: November 2002.</a> 
+  <dd><br>
+  <dd>In this report we present a collection of benchmark example problems for 
+    robust control design of linear continuous-time systems. The collection is 
+    intended to be used with the SLICOT library of routines for H-infinity and 
+    mu-design of control systems. The present version of the collection includes 
+    nine systems. The benchmark examples are implemented in M-files.
+</dl>
+
+
+		<hr noshade color="#666666">
+		
+<dl>
+  <dt><a href="SLWN2002-7.pdf"><b>Peter Benner, Enrique S. Quintana-Orti 
+    and Gregorio Quintana-Orti </b><br>
+    <em>Experimental evaluation of the parallel model reduction routines in PSLICOT 
+    </em><br>
+    SLICOT Working Note 2002-7: August 2002.</a> 
+  <dd><br>
+  <dd>An experimental evalaution is reported, including numerical aspects and 
+    parallel performance, of the parallel routines for absolute error model reduction 
+    in PSLICOT based on iterative solution of the underlying matrix (Lyapunov) 
+    equations. The frequency response and the performance of the parallel routiens 
+    are comapred with those of the analogous codes in SLICOT.
+</dl>
+
+		
+		<hr noshade color="#666666">
+		
+<dl>
+  <dt><a href="SLWN2002-5.pdf"><b>Andras Varga</b><br>
+    <em>New Numerical Software for Model and Controller Reduction</em><br>
+    SLICOT Working Note 2002-5: June 2002.</a> 
+  <dd><br>
+  <dd>We describe the recently developed model and controller reduction software 
+    for SLICOT within Task II.B of the NICONET Project. A powerful collection 
+    of user callable Fortran 77 routines has been implemented based on the latest 
+    algorithmic developments which cover the relative error model reduction using 
+    the balanced stochastic truncation approach, model reduction using frequency-weighted 
+    balancing and frequency-weighted Hankel-norm approximation methods, as well 
+    as special controller reduction methods using the frequency-weighted balancing 
+    and coprime factorization based techniques. All implemented routines can be 
+    employed to reduce both stable and unstable, continuous- or discrete-time 
+    models or controllers. The underlying numerical algorithms are based on extensions 
+    of the square-root and balancing-free accuracy enhancing technique developed 
+    by the author for balancing-related model reduction. The new model and controller 
+    reduction routines for SLICOT are among the most powerful and numerically 
+    most reliable software tools available for model and controller reduction. 
+    To facilitate their usage, easy-to-use and flexible interfaces have been developed 
+    to integrate them in MATLAB and Scilab. 
+</dl>
+<hr noshade color="#666666">
+		
+		
+<dl>
+  <dt><a href="SLWN2002-6.pdf"><b>Rene Schneider, Andreas Riedel, Vincent 
+    Verdult, Michel Verhaegen, Vasile Sima</b><br>
+    <em>SLICOT system identification toolbox for nonlinear Wiener systems</em><br>
+    SLICOT Working Note 2002-6: June 2002.</a> 
+  <dd><br>
+  <dd>A systematic approach to address the Wiener identification problem is given. 
+    The structure of the numerical library to identify Wiener systems according 
+    to this approach is described, as well as the interface enabling the developed 
+    Fortran routines to be used in MATLAB and Scilab. Finally, a number of illustrations 
+    of the use of the developed software is given. 
+</dl>
+<hr noshade color="#666666">
+		
+<dl>
+  <dt><a href="SLWN2002-4.pdf"><b>Fernando Alvarruiz and Vicente Hernandez</b><br>
+    <em>Definition and implementation of a SLICOT interface and a MATLAB Gateway 
+    for the solution of nonlinear equations systems</em><br>
+    SLICOT Working Note 2002-4: March 2002.</a> 
+  <dd><br>
+  <dd>This paper presents SLICOT and MATLAB interfaces for the KINSOL software 
+    package, used for solving nonlinear equations systems. The SLICOT interface 
+    enables the user to call the KINSOL package by means of a subroutine with 
+    a SLICOT-compliant calling sequence. By means of the MATLAB interface the 
+    user can call the package from MATLAB, defining the problem by means of MATLAB 
+    functions. The interfaces could be extended in the future in order to consider 
+    other nonlinear equations systems solvers, although some restructuring of 
+    the interfaces would be necessary.
+</dl>
+
+
+		<p>
+		<hr noshade color="#666666">
+		
+<dl>
+  <dt><a href="SLWN2002-3.pdf"><b>Fernando Alvarruiz and Vicente Hernandez</b><br>
+    <em>Definition and implementation of a SLICOT interface and a MATLAB Gateway 
+    for the solution of non-linear programming problems</em><br>
+    SLICOT Working Note 2002-3: March 2002.</a> 
+  <dd><br>
+  <dd>This paper presents SLICOT and MATLAB interfaces for the FSQP package, which 
+    stands for Feasible Sequential Quadratic Programming. The SLICOT interface 
+    enables the user to call the FSQP package by means of a subroutine with a 
+    SLICOT- compliant calling sequence. By means of the MATLAB interface the user 
+    can call the package from MATLAB, defining the problem by means of MATLAB 
+    functions. The interfaces could be extended in the future in order to consider 
+    other nonlinear programming solvers, although some restructuring of the interfaces 
+    would be necessary.
+</dl>
+<p>
+		<hr noshade color="#666666">
+		
+<dl>
+  <dt><a href="SLWN2002-2.pdf"><b>Younès Chahlaoui and Paul Van Dooren</b><br>
+    <em>A collection of Benchmark examples for model reduction of linear time 
+    invariant dynamical systems</em><br>
+    SLICOT Working Note 2002-2: February 2002.</a> 
+  <dd><br>
+  <dd>In order to test the numerical methods for model reduction we present here 
+    a benchmark collection, which contain some useful real world examples reflecting 
+    current problems in applications. All simulations were obtained via MATLAB 
+    and some SLICOT programs of Niconet.
+</dl>
+
+
+		<p>
+		<hr noshade color="#666666">
+		
+<dl>
+  <dt><a href="SLWN2002-1.pdf"> <b>Peter Benner, Rafael Mayo, Enrique 
+    S. Quintana-Orti and Gregorio Quintana-Orti</b><br>
+    <em>Enhanced services for remote model reduction of large-scale dense linear 
+    systems</em><br>
+    SLICOT Working Note 2002-1: January 2002.</a> 
+  <dd><br>
+  <dd>This paper describes enhanced services for remote model reduction of large-scale, 
+    dense linear time- invariant systems. Specically, we describe a Web service 
+    and a Mail service for model reduction on a cluster of Intel Pentium-II architectures 
+    using absolute error methods. Experimental results show the appeal and accessibility 
+    provided by these services.
+</dl>
+<p>
+		<hr noshade color="#666666">
+		
+<dl>
+  <dt><a href="SLWN2001-7.pdf"><b>Petko Petkov, Da Wei Gu and Mihail 
+    Konstantinov</b><br>
+    <em>Robust control of a disk drive servo system</em><br>
+    SLICOT Working Note 2001-7: December 2001.</a> 
+  <dd><br>
+  <dd>In this expository paper we show the application of some of the SLICOT routines 
+    in the robust control analysis and design of a disk drive servo system. An 
+    uncertainty model of the system plant is first derived which contains eleven 
+    uncertain parameters including four resonance frequencies, four damping coefficients 
+    and three rigid body model parameters. Three controllers for the uncertain 
+    system are designed using, respectively, the techniques of H_inf mixed sensitivity 
+    design, H_inf loop shaping design procedure (LSDP) and mu-synthesis method. 
+    With these controllers the closed-loop system achieves robust stability and 
+    in the cases of H_inf and mu-controllers the closed loop system practically 
+    achieves robust performance. A detailed comparison of the frequency domain 
+    and time domain characteristics of the closed-loop system with the three controllers 
+    is conducted. Further, model reduction routines have been applied to find 
+    a reasonably low order controller based on the mu-synthesis design. This reduced 
+    order controller maintains the robust stability and robust performance of 
+    the closed-loop system. Simulations of the nonlinear sampled-data servo system 
+    with the low order controller have been included as well, which confirms the 
+    practical applicability of the controller obtained.
+</dl>
+		<p>
+		<hr noshade color="#666666">
+
+		
+<dl>
+  <dt><a href="SLWN2001-6.pdf"><b>Chris Denruyter</b><br>
+    <em>Solving Sylvester equations for Model Reduction: SLICOT vs. MATLAB</em><br>
+    SLICOT Working Note 2001-6: September 2001.</a> 
+  <dd><br>
+  <dd>In this report, we compare two Sylvester equation solvers: the MATLAB function 
+    lyap and the SLICOT function slsylv. An algorithm designed for model reduction 
+    and based on the resolution of a Sylvester equation is presented. In this 
+    context, timing results show the superiority of the SLICOT based m.file slsylv.
+</dl>
+		<p>
+		<hr noshade color="#666666">
+		
+<dl>
+  <dt><a href="SLWN2001-5.pdf"><b>Isak Jonsson and Bo Kågström</b><br>
+    <em>Recursive Blocked Algorithms for Solving Triangular Matrix Equations---Part 
+    II: Two-sided and Generalized Sylvester and Lyapunov Equations</em><br>
+    SLICOT Working Note 2001-5: September 2001.</a> 
+  <dd><br>
+  <dd>We continue our study on high-performance algorithms for solving triangular 
+    matrix equations. They appear naturally in different condition estimation 
+    problems for matrix equations and various eigenspace computations, and as 
+    reduced systems in standard algorithms. Building on our successful recursive 
+    approach applied to one-sided matrix equations (Part I), we now present recursive 
+    blocked algorithms for two-sided matrix equations, which include matrix product 
+    terms such as AXB T . Examples are the discrete-time standard and generalized 
+    Sylvester and Lyapunov equations. The means for high-performance are the recursive 
+    variable blocking, which has the potential of matching the memory hierarchies 
+    of today's high-performance computing systems, and level 3 computations which 
+    mainly are performed as GEMM operations. Different implementation issues are 
+    discussed, focusing on similarities and differences between one-sided and 
+    two-sided matrix equations. We present uniprocessor and SMP parallel performance 
+    results of recursive blocked algorithms and routines in the state-of-the-art 
+    SLICOT library. The performance improvements of our recursive algorithms are 
+    remarkable, including 10-folded speedups or more, compared to standard algorithms.
+</dl>			
+	<p>
+		<hr noshade color="#666666">
+		
+<dl>
+  <dt><a href="SLWN2001-4.pdf"><b>Isak Jonsson and Bo Kågström </b><br>
+    <em>Recursive Blocked Algorithms for Solving Triangular Matrix Equations---Part 
+    I: One-Sided and Coupled Sylvester-Type Equations</em><br>
+    SLICOT Working Note 2001-4: available since April 2001 and revised in August 
+    2001.</a> 
+  <dd><br>
+  <dd>Triangular matrix equations appear naturally in estimating the condition 
+    numbers of matrix equations and different eigenspace computations, including 
+    block-diagonalization of matrices and matrix pairs and computation of functions 
+    of matrices. To solve a triangular matrix equation is also a major step in 
+    the classical Bartels-Stewart method. We present recursive blocked algorithms 
+    for solving one-sided triangular matrix equations, including the continuous-time 
+    Sylvester and Lyapunov equations, and a generalized coupled Sylvester equation. 
+    The main parts of the computations are performed as level 3 general matrix 
+    multiply and add (GEMM) operations. Recursion leads to an automatic variable 
+    blocking that has the potential of matching the memory hierarchies of today's 
+    HPC systems. Different implementation issues are discussed, including when 
+    to end the recursion, the design of optimized superscalar kernels for solving 
+    leaf-node triangular matrix equations efficiently, and how parallelism is 
+    utilized in our implementations. Uniprocessor and SMP parallel performance 
+    results of our recursive blocked algorithms and corresponding routines in 
+    the state-of-the-art libraries LAPACK and SLICOT are presented. The performance 
+    improvements of our recursive algorithms are remarkable, including 10-folded 
+    speedups compared to standard algorithms.
+</dl>
+		<p>
+		<hr noshade color="#666666">
+		
+<dl>
+  <dt><a href="SLWN2001-3.pdf"><b>David Guerrero, Vicente Hernandez and 
+    Jose E. Roma</b><br>
+    <em>Integration and development of routines for the parallel solution of Lyapunov 
+    equations by Hammarling's method</em><br>
+    SLICOT Working Note 2001-3: June 2001.</a> 
+  <dd><br>
+  <dd>This report describes the integration of some routines for solving standard 
+    Lyapunov equations by Hammarling's method on parallel machines
+</dl>
+<p>
+		<hr noshade color="#666666">
+		
+<dl>
+  <dt><a href="SLWN2001-2.pdf"><b>Erik Elmroth, Pedher Johansson, Bo 
+    Kågström and Daniel Kressner</b><br>
+    <em>A Web Computing Environment for the SLICOT Library.</em><br>
+    SLICOT Working Note 2001-2: January 2001, revised June 2001</a> 
+  <dd><br>
+  <dd>A prototype web computing environment for computations related to the design 
+    and analysis of control systems using the SLICOT software library is presented. 
+    The web interface can be accessed from a standard world wide web browser with 
+    no need for additional software installations on the local machine. The environment 
+    provides user- friendly access to SLICOT routines where run-time options are 
+    specified by mouse clicks on appropriate buttons. Input data can be entered 
+    directly into the web interface by the user or uploaded from a local computer 
+    in a standard text format or in MATLAB binary format. Output data is presented 
+    in the web browser window and possible to download in a number of different 
+    formats, including MATLAB binary. The environment is ideal for testing the 
+    SLICOT software before performing a software installation or for performing 
+    a limited number of computations. It is also highly recommended for education 
+    as it is easy to use, and basically self-explanatory, with the users' guide 
+    integrated in the user interface.
+</dl>
+
+
+		<p>
+		<hr noshade color="#666666">
+		
+<dl>
+  <dt><a href="SLWN2001-1.pdf"><b>Petko Petkov, Da Wei Gu and Mihail 
+    Konstantinov</b><br>
+    <em>Robust Control of a Triple Inverted Pendulum Using mu-Synthesis.</em><br>
+    SLICOT Working Note 2001-1: January 2001.</a> 
+  <dd><br>
+  <dd>In this paper we apply some of the SLICOT routines in the mu-synthesis of 
+    a robust control system for a triple inverted pendulum. We consider the case 
+    of a mixed type uncertainty consisting of two complex uncertainties in the 
+    actuators, three real uncertainties in the moments of inertia and three real 
+    uncertainties in the viscous friction coefficients. Using the D-K iteration, 
+    a further fictitious complex uncertainty block is included and a mu-controller 
+    is constructed for which the closed-loop control system achieves robust stability 
+    and robust performance as requested. The influence of the individual uncertainty 
+    on the robust stability is investigated using mu-analysis. In addition a reduced 
+    order controller is found such that the robust stability and robust performance 
+    of the closed-loop system are preserved with the much lower order controller. 
+    In the design, the structured singular value mu is calculated with the SLICOT 
+    routine AB13MD and the model reduction toolbox in SLICOT is used in the model 
+    reduction of the mu controller. The computation experience shows that the 
+    SLICOT routines perform better than the counterpart routines in MATLAB in 
+    terms of speed and accuracy. 
+</dl>
+
+		<p>
+		<hr noshade color="#666666">
+		
+<dl>
+  <dt><a href="SLWN2000-6.pdf"><b>Da Wei Gu, Petko Petkov and Mihail 
+    Konstantinov</b><br>
+    <em>On Discrete H_inf Loop Shaping Design Procedure Routines</em><br>
+    SLICOT Working Note 2000-6: November 2000.</a> 
+  <dd><br>
+  <dd>This report briefly introduces the H_inf loop shaping design procedure (LSDP) 
+    in the discrete-time case as well as its implementation in the software package 
+    SLICOT. Solution formulae are presented with the exposure of a relationship 
+    between the solutions to the three discrete-time, algebraic Riccati equations 
+    (DARE) required in the construction of an LSDP controller. These SLICOT routines 
+    also produce estimates of the condition numbers of the DARE solutions, which 
+    reveals the accuracy and reliability of the computational results. The developed 
+    routines are tested in a design example, and are included as appendices. 
+</dl>
+		<p>
+		<hr noshade color="#666666">
+		
+<dl>
+  <dt><a href="SLWN2000-5.pdf"><b>Vicente Hernandez, Ignacio Blanquer, 
+    Enrique Arias, Victor Garcia, Lourdes Penalver and Pedro Ruiz </b><br>
+    <em>Nonlinear control systems simulation toolbox in SLICOT</em><br>
+    SLICOT Working Note 2000-5: August 2000.</a> 
+  <dd><br>
+  <dd>This report presents the SLICOT implementation of the nonlinear control 
+    systems toolbox. A common interface to several ODE and DAE libraries is prepared. 
+    This interface is the entry point to the SLICOT solvers and enables users 
+    to test the advantages of different approaches. In addition, an implementation 
+    of a MATLAB gateway to the nonlinear control systems simulation interface 
+    is developed which enables the user to define the problems using matlab code, 
+    including the definition of the system functions and Jacobians. Also, the 
+    performance of the toolbox using benchmark problems, as well as industrial 
+    test cases is described. 
+</dl>
+		<p>
+		<hr noshade color="#666666">
+		
+<dl>
+  <dt><a href="SLWN2000-4.pdf"><b>Vasile Sima </b><br>
+    <em>SLICOT Linear Systems Identification Toolbox</em><br>
+    SLICOT Working Note 2000-4: July 2000.</a> 
+  <dd><br>
+  <dd>This report summarizes the achievements and deliverables of the Task III.A 
+    of the NICONET Project. After a short description of the linear system identification 
+    problem and of the available subspace-based techniques to solve it, the numerical 
+    algorithms implemented in SLICOT Linear Systems Identification Toolbox - SLIDENT 
+    - are surveyed. The associated Fortran routines are then listed and their 
+    functional abilities are outlined. The developed interfaces to MATLAB or Scilab, 
+    as well as examples of use are presented. Comparisons with the available MATLAB 
+    codes are included, illustrating the efficiency and accuracy of the SLIDENT 
+    components. 
+</dl>
+		<p>
+		<hr noshade color="#666666">
+		
+<dl>
+  <dt><a href="SLWN2000-3.pdf"><b>Vicente Hernandez, Ignacio Blanquer, 
+    Enrique Arias, and Pedro Ruiz </b><br>
+    <em>Definition and Implementation of a SLICOT Standard Interface and the associated 
+    MATLAB Gateway for the Solution of Nonlinear Control Systems by using ODE 
+    and DAE Packages</em><br>
+    SLICOT Working Note 2000-3: March 2000.</a> 
+  <dd><br>
+  <dd>In this report an interface system for the execution of several widely-used 
+    integrator packages for the solving of Ordinary Differential Equations and 
+    Diffferential Algebraic Equations is presented. This package offers a SLICOT-compliant 
+    unique interface to the packages ODEPACK (LSODE, LSODA, LSODES, LSODI, LSOIBT), 
+    DASSL, RADAU5, DASPK and GELDA. All the parameters have been standarised to 
+    allow a quick change from one package to another and to take profit of the 
+    different capabilities of the different packages. The interface has also been 
+    migrated to MATLAB offering the possibility of defining the system functions 
+    as MATLAB m-files, using the FORTRAN compiled solver packages instead of the 
+    MATLAB funcions. The source code of the system can be downloaded from the 
+    SLICOT repository. 
+</dl>
+		<p>
+		<hr noshade color="#666666">
+		
+<dl>
+  <dt><a href="nic1999-19.pdf"><b>Ad van den Boom, Ton Backx and Yucai 
+    Zhu </b><br>
+    <em>Benchmarks for Identification</em><br>
+    NICONET Report 1999-19: July 2000.</a> 
+  <dd><br>
+  <dd>This report describes the preliminary steps for setting up a benchmark collection 
+    for identification. The identification protocol is described, where aspects 
+    as experiment set-up, signal pre-processing, modelling, parametrization, estimation 
+    methods and model validation are reviewed briefly. The relation of identification 
+    and control is stipulated. An analysis is given of requirements for good benchmarks 
+    for identification and some relevant organisational issues are addressed. 
+</dl>
+		<p>
+		<hr noshade color="#666666">
+		
+<dl>
+  <dt><a href="SLWN2000-2.pdf"><b>Daniel Kressner and Paul Van Dooren 
+    </b><br>
+    <em>Factorizations and linear system solvers for matrices with Toeplitz structure</em><br>
+    SLICOT Working Note 2000-2: June 2000.</a> 
+  <dd><br>
+  <dd>In this report we describe new routines for several factorizations of matrices 
+    with Toeplitz or block Toeplitz structure and show how this can be used to 
+    solve the corresponding systems of equations or least squares systems of equations. 
+    We also describe certain implementation details and show how to handle matrices 
+    of low rank or of low bandwidth. 
+</dl>
+		<p>
+		<hr noshade color="#666666">
+		
+<dl>
+  <dt><a href="SLWN2000-1.pdf"><b>Petko Petkov, Da-Wei Gu, Mihail M. 
+    Konstantinov and Volker Mehrmann </b><br>
+    <em>Condition and Error Estimates in the Solution of Lyapunov and Riccati 
+    Equations</em><br>
+    SLICOT Working Note 2000-1: January 2000.</a> 
+  <dd><br>
+  <dd>The condition number estimation and the computation of residual based forward 
+    error estimates in the numerical solution of matrix algebraic continuous-time 
+    and discrete-time Lyapunov and Riccati equations is considered. The estimates 
+    implemented involve the solution of triangular Lyapunov equations along with 
+    usage of the LAPACK norm estimator. Results from numerical experiments demonstrating 
+    the performance of the estimates proposed are presented. 
+</dl>
+		<p>
+		<hr noshade color="#666666">
+		
+<dl>
+  <dt><a href="SLWN1999-16.pdf"><b>J&ouml;rn Abels and Peter Benner</b><br>
+    <em>DAREX --- A Collection of Benchmark Examples for Discrete-Time Algebraic 
+    Riccati Equations (Version 2.0)</em><br>
+    SLICOT Working Note 1999-16: December 1999.</a> 
+  <dd><br>
+  <dd>This is the second part of a collection of benchmark examples for the numerical 
+    solution of algebraic Riccati equations. After presenting examples for the 
+    continuous-time case in Part I (CAREX), our concern in this paper is discrete-time 
+    algebraic Riccati equations. This collection may serve for testing purposes 
+    in the construction of new numerical methods, but may also be used as a reference 
+    set for the comparison of methods. This version updates an earlier benchmark 
+    collection. Some of the examples have been extended by incorporating parameters 
+    and there have been some new additions to the collection. 
+</dl>
+		<p>
+		<hr noshade color="#666666">
+		
+<dl>
+  <dt><a href="SLWN1999-14.pdf"><b>J&ouml;rn Abels and Peter Benner</b><br>
+    <em>CAREX --- A Collection of Benchmark Examples for Continuous-Time Algebraic 
+    Riccati Equations (Version 2.0)</em><br>
+    SLICOT Working Note 1999-14: December 1999.</a> 
+  <dd><br>
+  <dd>A collection of benchmark examples is presented for the numerical solution 
+    of continuous-time algebraic Riccati equations. This collection may serve 
+    for testing purposes in the construction of new numerical methods, but may 
+    also be used as a reference set for the comparison of methods. The collected 
+    examples focus mainly on applications in linear-quadratic optimal control 
+    theory. This version updates an earlier benchmark collection and includes 
+    one new example. 
+</dl>
+		<p>
+		<hr noshade color="#666666">
+		
+<dl>
+  <dt><a href="SLWN1999-18.pdf"><b>Andras Varga</b><br>
+    <em>Task II.B.1 - Selection of Software for Controller Reduction </em><br>
+    SLICOT Working Note 1999-18: December 1999.</a> 
+  <dd><br>
+  <dd>This working note presents a short overview of methods suitable for controller 
+    reduction. A first class of methods considered are general purpose methods 
+    for reduction of unstable systems, as for example, absolute and relative error 
+    methods or frequency weighted methods, both in combination with modal separation 
+    or coprime factorization techniques. Special frequency weighted controller 
+    reduction methods able to preserve closed-loop stability and even closed-loop 
+    performance are also discussed. A selection of user callable and supporting 
+    routines to be implemented for controller reduction is proposed. The new routines 
+    will be included in the SLICOT library. 
+</dl>
+		<p>
+		<hr noshade color="#666666">
+		
+<dl>
+  <dt><a href="SLWN1999-17.pdf"><b>Andras Varga and Paul Van Dooren</b><br>
+    <em>Task I.A - Basic software tools for standard and generalized state-space 
+    systems and transfer matrix factorizations </em><br>
+    SLICOT Working Note 1999-17: December 1999.</a> 
+  <dd><br>
+  <dd>This report surveys the deliverables of Task I.A. We first give a brief 
+    description of the control problems that are solved by the basic numerical 
+    tools developed in this Task and we list the different routines of SLICOT 
+    that correspond to these control problems and that are available via ftp. 
+    We then describe the toolboxes that give interactive access via MATLAB or 
+    Scilab to those routines and describe the benchmark problems for this Task. 
+    We finally give a few numerical examples exhibiting the accuracy and speed 
+    of the new tools and describe a demo for the routines of this Task. 
+</dl>
+		<p>
+		<hr noshade color="#666666">
+		
+<dl>
+  <dt><a href="SLWN1999-20.pdf"><b>Michel Verhaegen</b><br>
+    <em>Symbolic and computational pre-processing in physical parameter estimation 
+    of multi-body mechanical systems </em><br>
+    SLICOT Working Note 1999-20: November 1999.</a> 
+  <dd><br>
+  <dd>The objective of this note is to highlight the scope and computational (symbolic 
+    and/or arithmetic) tasks of turning a physical parameter estimation problem 
+    into a (constraint) optimization problem. Concrete examples show the need 
+    for symbolic (object-oriented) modeling environments for defining the structure 
+    of the physical system to be used in the parameter optimization step. Without 
+    this (interactive) software environment for compiling a physical parameter 
+    estimation problem into an optimization problem, standardization of commercial 
+    optimization routines is of little or no interest. 
+</dl>
+		<p>
+		<hr noshade color="#666666">
+		
+<dl>
+  <dt><a href="nic1999-15.pdf"><b>Da-Wei Gu, Petko Hr. Petkov and Mihail 
+    Konstantinov</b><br>
+    <em>H-inf. loop shaping design procedure routines in SLICOT</em><br>
+    NICONET Report 1999-15: November 1999.</a> 
+  <dd><br>
+  <dd>This report briefly introduces the H-inf. loop shaping design procedure 
+    (LSDP) and its implementation in the software package SLICOT. The developed 
+    routines are tested in a design example and are included as appendices. 
+</dl>
+		<p>
+		<hr noshade color="#666666">
+		
+<dl>
+  <dt><a href="nic1999-13.pdf"><b>Anton A. Stoorvogel</b><br>
+    <em>Numerical problems in robust and H-inf optimal control</em><br>
+    NICONET Report 1999-13: September 1999.</a> 
+  <dd><br>
+  <dd>After formulating the H_inf control problem for linear, time-invariant and 
+    finite-dimensional systems, the difficulties in the computation of the optimal 
+    performance are discussed, as well as the problems encountered in computing 
+    controllers. 
+</dl>
+		<p>
+		<hr noshade color="#666666">
+		
+<dl>
+  <dt><a href="SLWN1999-12.pdf"><b>Da-Wei Gu, Petko Hr. Petkov and Mihail 
+    Konstantinov</b><br>
+    <em>H-inf and H2 optimization toolbox in SLICOT</em><br>
+    SLICOT Working Note 1999-12: September 1999.</a> 
+  <dd><br>
+  <dd>This report summarizes the progress made in the sub-task IV.A of the NICONET 
+    project. Selected routines to implement H_inf and H_2 (sub) optimization syntheses 
+    are listed, which have all been standardized and included in the SLICOT package. 
+    The integration of those routines in MATLAB has also been completed; 
+    the MEX-files are attached in the appendices. This report discusses the selection and 
+    testing of benchmark problems with regard to the developed routines, and the 
+    comparisons made between these routines and others available in MATLAB. In 
+    particular, two industrial benchmark case studies, namely the controller design 
+    of a Bell 205 helicopter and a distillation column design, are introduced 
+    and the design results, obtained using the developed routines, are analysed. 
+</dl>
+		<p>
+		<hr noshade color="#666666">
+		
+<dl>
+  <dt><a href="SLWN1999-11.pdf"><b>Volker Mehrmann, Vasile Sima, Andras 
+    Varga and Hongguo Xu</b><br>
+    <em>A MATLAB MEX-file environment of SLICOT</em><br>
+    SLICOT Working Note 1999-11: August 1999.</a> 
+  <dd><br>
+  <dd>Several MEX-files are developed based on SLICOT Fortran subroutines. The 
+    MEX-files provide new tools for the numerical solution of some classical control 
+    problems such as the solution of linear or Riccati matrix equations computations 
+    in the MATLAB environment. Numerical tests show that the resulting MEX-files 
+    are equally accurate and much more efficient than the corresponding MATLAB 
+    functions in the control system toolbox and the robust control toolbox. In 
+    order to increase user-friendlyness the related m-files are also developed 
+    so that the MEX-file interface to the corresponding SLICOT routines can be 
+    implemented directly and easily. 
+</dl>
+		<p>
+		<hr noshade color="#666666">
+		
+<dl>
+  <dt><a href="nic1999-10.pdf"><b>Petko Petkov, Mihail Konstantinov, 
+    Da-Wei Gu, Volker Mehrmann</b><br>
+    <em>Numerical solution of matrix Riccati equations: a comparison of six solvers</em><br>
+    NICONET Report 1999-10: August 1999.</a> 
+  <dd><br>
+  <dd>We present results from the evaluation of six solvers intended for the numerical 
+    solution of continuous-time matrix algebraic Riccati equations. The solvers 
+    include the MATLAB functions from different toolboxes and two Fortran 77 solvers 
+    developed by the authors. The comparison implements two benchmark problems 
+    each comprising 1600 6-th order Riccati equations with known solutions. For 
+    each solver and each equation we compute the relative forward and backward 
+    errors and for two of the solvers we investigate the accuracy of condition 
+    and error estimates. Some conclusions concerning the numerical behaviour of 
+    the solvers are given. 
+</dl>
+		<p>
+		<hr noshade color="#666666">
+		
+<dl>
+  <dt><a href="SLWN1999-9.pdf"><b>Paul Van Dooren</b><br>
+    <em>Selection of basic software tools for structured matrix decompositions 
+    and perturbations</em><br>
+    SLICOT Working Note 1999-9: June 1999.</a> 
+  <dd><br>
+  <dd>In this note a survey is given of areas of systems and control where structured 
+    matrix problems are important. In identification we mention four different 
+    types of data collection : impulse response, input-output pairs, frequency 
+    response and covariance data. In each of those, the identification problem 
+    can be rewritten in terms of structured matrix problems for which there exist 
+    fast decompositions. The use of structured matrix decompositions should yield 
+    an improvement in speed of computations. In analysis and design one encounters 
+    eigenvalue problems with specific structure such as cyclic, Hamiltonian and 
+    symplectic matrices. For those problems it is important to use structure preserving 
+    decompositions, mainly to improve the numerical accuracy of the computations, 
+    although these algorithms typically yield improved computational complexities 
+    as well. We also list the key numerical routines that should be provided in 
+    the SLICOT library in order to tackle most of the problems mentioned in this 
+    note. 
+</dl>
+		<p>
+		<hr noshade color="#666666">
+		
+<dl>
+  <dt><a href="nic1999-8.pdf"><b>Andras Varga</b><br>
+    <em>Model reduction routines for SLICOT</em><br>
+    NICONET Report 1999-8: June 1999.</a> 
+  <dd><br>
+  <dd>We report on the newest developments of model reduction software for SLICOT. 
+    Three enhanced accuracy model reduction algorithms belonging to the class 
+    of methods based on or related to balancing techniques form the basis of model 
+    reduction software in SLICOT. These methods are primarily intended for the 
+    reduction of linear, stable, continuous- or discrete-time systems. However, 
+    in combination with additive spectral decomposition or coprime factorization 
+    techniques the basic methods can be employed to reduce unstable systems too. 
+    The implemented computational methods for reduction of stable and unstable 
+    systems, and the associated software available in SLICOT are presented. Performance 
+    comparisons performed using appropriate interface software to user-friendly 
+    environments like MATLAB and Scilab show the superiority of SLICOT model reduction 
+    tools over existing model reduction software. 
+</dl>
+		<p>
+		<hr noshade color="#666666">
+		
+<dl>
+  <dt><a href="SLWN1999-7.pdf"><b>Daniel Kressner, Volker Mehrmann and 
+    Thilo Penzl</b><br>
+    <em>DTLEX - A collection of benchmark examples for discrete-time Lyapunuv 
+    equations</em><br>
+    SLICOT Working Note 1999-7: June 1999.</a> 
+  <dd><br>
+  <dd>This paper describes the benchmark collection DTLEX, that contains test 
+    examples of discrete-time algebraic Lyapunov equations. These matrix equations 
+    are also known as Stein equations. The main focus of DTLEX is on scalable 
+    benchmark examples depending on parameters, which affect the conditioning 
+    of the equation. Such examples are particularly useful for the assessment 
+    of the complexity and the accuracy of numerical solution methods. 
+</dl>
+		<p>
+		<hr noshade color="#666666">
+		
+<dl>
+  <dt><a href="SLWN1999-6.pdf"><b>Daniel Kressner, Volker Mehrmann and 
+    Thilo Penzl</b><br>
+    <em>CTLEX - A collection of benchmark examples for continuous-time Lyapunuv 
+    equations</em><br>
+    SLICOT Working Note 1999-6: June 1999.</a> 
+  <dd><br>
+  <dd>This paper describes the benchmark collection CTLEX, that contains test 
+    examples of continuous-time algebraic Lyapunov equations. The main focus of 
+    this collection is on scalable benchmark examples depending on parameters, 
+    which affect the conditioning of the equation. Such examples are particularly 
+    useful for the assessment of the complexity and the accuracy of numerical 
+    solution methods. 
+</dl>
+		<p>
+		<hr noshade color="#666666">
+		
+<dl>
+  <dt><a href="nic1999-5.pdf"><b>Petko Hr. Petkov, Da-Wei Gu and Mihail 
+    M. Konstantinov</b><br>
+    <em>Fortran 77 routines for H-infinity and H2 design of discrete-time linear 
+    control systems</em><br>
+    NICONET Report 1999-5: May 1999.</a> 
+  <dd><br>
+  <dd>We present Fortran 77 subroutines intended for state-space design of H-infinity 
+    (sub)optimal controllers and H2 optimal controllers for linear discrete-time 
+    control systems. 
+  <dd>The subroutines make use of LAPACK and BLAS libraries and produce estimates 
+    of the condition numbers of the matrices which are to be inverted and estimates 
+    of the condition numbers of the matrix Ricatti equations which are to be solved 
+    in the computation of the controllers. The subroutines will be included in 
+    the SLICOT library. 
+</dl>
+		<p>
+		<hr noshade color="#666666">
+		
+<dl>
+  <dt><a href="nic1999-4.pdf"><b>Da-Wei Gu, Petko Hr. Petkov and Mihail 
+    M. Konstantinov</b><br>
+    <em>An introduction to H-infinity optimisation designs</em><br>
+    NICONET Report 1999-4: May 1999.</a> 
+  <dd><br>
+  <dd>This NICONET report is prepared for users of the software package SLICOT 
+    who are not familiar with the H-infinity optimisation design approach. Together 
+    with some previous NICONET reports it is hoped that the reader would have 
+    a general idea about the H-infinity method, know how to use the algorithms 
+    available in SLICOT to synthesize a controller for a standard H-infinity optimisation 
+    problem and, furthermore, be aware of some difficulties such as singularity 
+    in the H-infinity controllers design. 
+</dl>
+		<p>
+		<hr noshade color="#666666">
+		
+<dl>
+  <dt><a href="nic1999-3.pdf"><b>Bert Haverkamp</b><br>
+    <em>Efficient implementation of subspace method identification algorithms</em><br>
+    NICONET Report 1999-3: March 1999.</a> 
+  <dd><br>
+  <dd>This paper summarises the results of a study to improve existing Subspace 
+    Method Identification (SMI) algorithms. Significant improvements in calculation 
+    speed can be achieved by combining components from existing algorithms namely 
+    N4SID and MOESP. A second improvement can be achieved by more efficient implementation 
+    of critical parts of the algorithms. 
+</dl>
+		<p>
+		<hr noshade color="#666666">
+		<dl>
+			<dt><a href="nic1999-2.pdf"><b>Peter Benner and Heike Fassbender</b><br>
+			<em>SLICOT drives tractors!</em><br>
+			NICONET Report 1999-2: January 1999.</a>
+			<dd><br>
+			<dd>We describe a successful application of a SLICOT subroutine in a control engineering problem. Based on GPS data it is possible to automatically steer farm vehicles along a prescribed tracjectory. The bottleneck of the successful on-line implementation of a LQG regulator is the numerical solution of a discrete-time algebraic Riccati equation in real time and at high accuracy. This is achieved employing a Fortran-77 subroutine from the Subroutine Library in Control Theory SLICOT.
+		</dl>
+		<p>
+		<hr noshade color="#666666">
+		<dl>
+			<dt><a href="nic1999-1.pdf"><b>Peter Benner, Enrique S. Quintana-Orti and Gregorio Quintana-Orti</b><br>
+			<em>A portable subroutine library for solving linear control problems on distributed memory computers</em><br>
+			NICONET Report 1999-1: January 1999.</a>
+			<dd><br>
+			<dd>This paper describes the design of a software library for solving the basic computational problems that arise in analysis and synthesis of linear control systems. The library is intended for use in high performance computing environments based on parallel distributed memory architectures. The portability of the library is ensured by using the BLACS, PBLAS, and ScaLAPACK as the basic layer of communication and computational routines. Preliminary numerical results demonstrate the performance of the developed codes on parallel computers. The suggested library can serve as a basic layer for PSLICOT, a parallel extension of the Subroutine Library in Control Theory (SLICOT).
+		</dl>
+		<p>
+		<hr noshade color="#666666">
+		<dl>
+			<dt><a href="SLWN1998-10.pdf"><b>Daniel Kressner, Volker Mehrmann and Thilo Penzl</b><br>
+			<em>DTDSX - a Collection of benchmark examples for state-space realizations of time-invariant discrete-time systems</em><br>
+			SLICOT Working Note 1998-10: November 1998, revised June 1999.</a>
+			<dd><br>
+			<dd>This paper describes a benchmark collection for state-space realizations of time-invariant discrete-time dynamical systems. The collection is intended to provide a means for testing the correctness, accuracy, and speed of numerical methods for several problems arising in control theory. It has been implemented in FORTRAN and MATLAB.
+		</dl>
+		<p>
+		<hr noshade color="#666666">
+		<dl>
+			<dt><a href="SLWN1998-9.pdf"><b>Daniel Kressner, Volker Mehrmann and Thilo Penzl</b><br>
+			<em>CTDSX - a Collection of benchmark examples for state-space realizations of time-invariant continuous-time systems</em><br>
+			SLICOT Working Note 1998-9: November 1998.</a>
+			<dd><br>
+			<dd>This paper describes a benchmark collection for state-space realizations of time-invariant continuous-time dynamical systems. The collection is intended to provide a means for testing the correctness, accuracy, and speed of numerical methods for several problems arising in control theory. It has been implemented in FORTRAN and MATLAB.
+			<dt>&nbsp;<hr noshade color="#666666">
+  <dt><a href="SLWN1998-6.pdf"><b>W. Favoreel, V. Sima, S. Van Huffel, M. Verhaegen and B. De Moor</b><br>
+			<em>Subspace model identification of linear systems in SLICOT</em><br>
+			SLICOT Working Note 1998-6: October 1998.</a>
+			<dd><br>
+			<dd>This paper compares 3 commonly used subspace identification algorithms N4SID, MOESP and CVA, using their MATLAB implementation, in terms of prediction accuracy, simulation accuracy and computational efficiency. The comparison is made on the basis of 15 publicly available practical datasets to which the codes are applied.
+			<dt>&nbsp;<hr noshade color="#666666">
+  <dt><a href="nic1998-8.pdf"><b>Petko Hr. Petkov, Da-Wei Gu and Mihail M. Konstantinov</b><br>
+			<em>Fortran 77 routines for H-infinity and H-2 design of continuous-time linear control systems</em><br>
+			NICONET Report 1998-8: September 1998.</a>
+			<dd><br>
+			<dd>Fortran 77 routines are presented for state space design of H-infinity (sub)optimal controllers and H-2 optimal controllers for linear continuous-time control systems. The subroutines make use of LAPACK and BLAS libraries and produce estimates of the conditioning of the corresponding matrix algebraic Ricatti equations. Modified formulae are implemented in the case of H-infinity design which allows to reduce the order of the inverted matrices. The subroutines will be included in the SLICOT library.
+			<dt>&nbsp;
+			<hr noshade color="#666666">
+			<p><a href="SLWN1998-1.pdf"><b>I. Blanquer, D. Guerrero, V. Hernandez, E. Quintana-Orti and P. Ruiz</b><br>
+			<em>Parallel-SLICOT Implementation and Documentation Standards</em><br>
+			SLICOT Working Note 1998-1: September 1998.</a></p>
+			<dd>This paper presents the P-SLICOT (Parallel Subroutine Library in Control and Systems Theory) Implementation and Documentation Standards. Here we propose some useful guidelines for those who want to contribute to the parallel version of SLICOT. The main goal of these rules is to facilitate the work of obtaining a portable, reliable, and easy maintanable code
+			<dt>&nbsp;
+			<hr noshade color="#666666">
+			<p><a href="nic1998-7.pdf"><b>Da-Wei Gu, Petko Hr. Petkov and Mihail M. Konstantinov</b><br>
+			<em>Direct formulae for the H-infinity sub-optimal central controller.</em><br>
+			NICONET Report 1998-7: August 1998.</a></p>
+			<dd>Alternative formulae, directly based on the original data of the given interconncted system, are presented for the H-infinity sub-optimal central controller
+			<dt>&nbsp;
+			<hr noshade color="#666666">
+			<p><a href="SLWN1998-5.pdf"><b>Volker Mehrmann and Thilo Penzl</b><br>
+			<em>Benchmark collections in SLICOT.</em><br>
+			SLICOT Working Note 1998-5, June 1998.</a></p>
+			<dd>This paper contains guidelines for setting up benchmark collections for SLICOT. The purpose of these SLICOT benchmark collections is to establish an environment for testing the subroutines within the SLICOT library and compare their performance with other numerical software. Guidelines for the submission of benchmark examples by external contributors are given, as well as guidelines for the implementation of benchmark routines within SLICOT.
+			<dt>&nbsp;
+			<hr noshade color="#666666">
+			<p><a href="SLWN1998-4.pdf"><b>Andras Varga</b><br>
+			<em>Standardization of Interface for Nonlinear Systems Software in SLICOT.</em><br>
+			SLICOT Working Note 1998-4, June 1998.</a></p>
+			<dd>This paper discusses the development of standardized Fortran interfaces for the description of nonlinear systems to allow an easy interfacing with standard software for integration of differential equations, nonlinear programming and solving nonlinear equations. These interfaces are used too for nonlinear systems software in SLICOT and will be developed as part of the NICONET project.
+			<dt>&nbsp;
+			<hr noshade color="#666666">
+			<p><a href="SLWN1998-3.pdf"><b>Andras Varga</b><br>
+			<em>Task I.A.1 - Selection of Basic Software Tools for Standard and Generalized State-Space Systems and Transfer Matrix Factorizations.</em><br>
+			SLICOT Working Note 1998-3, June 1998.</a></p>
+			<dd>This paper discusses the algorithms and software for basis control problems, for the factorization of proper transfer function matrices, and for descriptor systems which are to be included in the SLICOT library. This task is executed as part of the NICONET project.
+			<dt>&nbsp;
+			<hr noshade color="#666666">
+			<dt><a href="SLWN1998-2.pdf"><b>Andras Varga</b><br>
+			<em>Task II.A.1 - Selection of Model Reduction Routines</em><br>
+			SLICOT Working Note 1998-2, June 1998.</a>
+			<dd><br>
+			<dd>This paper discusses the model reduction algorithms which are to be included in the SLICOT library. This task is executed as part of thr NICONET project.
+			<dt>&nbsp;
+			<hr noshade color="#666666">
+			<p><a href="nic97-3.pdf"><b>P. Benner, V. Mehrmann, V. Sima, S. Van Huffel and A. Varga</b><br>
+			<em>SLICOT - A Subroutine Library in Systems and Control Theory</em><br>
+			NICONET Report 97-3: June 1997 (to appear in Applied and Computational Control, Signals, and Circuits)</a></p>
+			<dd>This article describes the subroutine library SLICOT that provides Fortran 77 implementations of numerical algorithms for computations in systems and control theory. Around a nucleus of basic numerical linear algebra subroutines, this library builds methods for the design and analysis of linear control systems. A brief history of the library is given together with a description of the current version of the library and the on-going activities to complete and improve the library in several aspects
+			<dt>&nbsp;
+			<hr noshade color="#666666">
+			<p><a href="rep97-2.pdf"><b>V. Sima</b><br>
+			<em>High-Performance Numerical Software for Control Systems, and Subspace-Based System Identification</em><br>
+			WGS Report 97-2, March 1997.</a></p>
+			<dd>This document contains comparative results for some new SLICOT routines, as well as Fortran routines for system identification, and MATLAB computations.
+			<dt>&nbsp;
+			<hr noshade color="#666666">
+			<p><a href="rep97-1.pdf"><em>Results of the NICONET Questionnaire</em><br>
+			WGS Report 97-1, January 1997.</a></p>
+			<dd>This document is an extended report on the results of the NICONET questionnaire.
+			<dt>&nbsp;
+			<hr noshade color="#666666">
+			<p><a href="rep96-1.pdf"><em>SLICOT Implementation and Documentation Standards</em><br>
+			WGS Report 96-1, August 1996; (revised version of WGS Report 90-1).</a></p>
+			<dd>This report describes the documentation and implementation standards concerning the routines in the SLICOT library and should be used as guidance for potential contributors to the library. This report updates the old WGS report 90-1. Revisions: September 1996, January 1997, Febrary 1998.
+			<dt>&nbsp;
+			<hr noshade color="#666666">
+			<p><a href="rep96-2.pdf"><em>Contributor's Kit</em><br>
+			WGS Report 96-2, August 1996; (revised version of WGS Report 94-1).</a></p>
+			<dd>This document contains all information on how to contribute to the SLICOT library and is intended to enhance the submission of new subroutines. The requirements for acceptance of a contribution are outlined in a precise way. Furthermore, a brief overview of the possible benefits of distributing systems and control software through SLICOT is given. This report updates the old WGS report 94-1
+		</dl>
+		<hr noshade color="#666666">
+		<h4><a name="CACSD"></a>3. Numerical Algorithms</h4>
+		<dl>
+			<hr noshade color="#666666">
+			<p><a href="Sima96.pdf"><b>V. Sima</b><br>
+			<em>Algorithms and LAPACK-Based Software for Subspace Identification</em><br>
+			Proc. CACSD'96 Symposium, Dearborn, MI, pp. 182-187, 1996.</a></p>
+			<dd>Basic algorithms and LAPACK-based Fortran software for multivariable system identification by subspace techniques are described. Deterministic and combined deterministic-stochastic identification problems are dealt with using two approaches: MOESP (Multivariable Output Error state SPace) and N4SID (Numerical algorithm for Subspace State Space System IDentification). A state space model is computed from input-output data sequences. Multiple data sequences, collected by possibly independent identification experiments, can be handled. Sequential processing of large data sets can be used as an option. Illustrative numerical examples are included.
+			<dt>&nbsp;
+			<hr noshade color="#666666">
+			<p><a href="varga_mathmod94p2.pdf"><b>A. Varga</b><br>
+			<em>Numerical Methods and Software Tools for Model Reduction</em><br>
+			Proc. 1st MATHMOD Conf., Vienna, pp. 226-230, 1994.</a></p>
+			<dd>An overview of numerically reliable algorithms for model reduction is presented. The covered topics are the reduction of stable and unstable linear systems as well as the computational aspects of frequency weighted model reduction. The presentation of available software tools focuses on a recently developed Fortran library RASP-MODRED implementing a new generation of numerically reliable algorithms for model reduction.
+		</dl>
+		<hr noshade color="#666666">
+		<h4>4. Numerical Software in Control and Systems</h4>
+		<p>
+		<hr noshade color="#666666">
+		<dl>
+			<dt><a href="MTNS98.pdf"><b>Vasile Sima, Peter Benner, Sabine Van Huffel and Andras Varga</b><br>
+			<em>Improving the efficiency and accuracy of the MATLAB control toolbox using SLICOT-based gateways.</em><br>
+			Presented at MTNS98 Padova, Italy, July 6-10, 1998, (Proceedings of MTNS98).</a>
+			<dd><br>
+			<dd>The paper presents performance results for some components of the new, public-domain version of the SLICOT library in comparison with equivalent computations by some MATLAB functions included in the Control Toolbox. SLICOT incorporates the new algorothmic developments in numerical linear algebra, implemented in the state-of-the-art software packages LAPACK and BLAS. The results show that at comparable or better accuracy, SLICOT routines are several times faster than MATLAB computations.
+			<dt>&nbsp;
+			<hr noshade color="#666666">
+			<p><a href="intrep9714.pdf"><b>Sabine Van Huffel and Ad J. W. van den Boom</b><br>
+			<em>NICONET: network for performant numerical software development in control engineering</em><br>
+			Proc. 7th IFAC Symposium on Computer-Aided Control Systems Design, Ghent, Belgium, April 28-30, 1997, paper 95.</a></p>
+			<dd>Robust and performant numerical software for control systems analysis and design, such as the SLICOT and RASP libraries, is an essential ingredient in modern computer aided control systems design. To avoid duplicating the implementation efforts and ensure a wider dissemination, the originators of the SLICOT and RASP libraries have agreed to combine their libraries and make the joint library freely available. To extend the scope of cooperation, a thematic network for numerics in control NICONET is set up. This paper motivates the need for such a network and describes the objectives, benefits and main network activities.
+			<dt>&nbsp;
+			<dt>&nbsp;
+			<hr noshade color="#666666">
+			<p><a href="intrep9635.pdf"><b>Ad van den Boom and Sabine Van Huffel</b><br>
+			<em>Developments around the Freeware Standard Control Library SLICOT</em><br>
+			Proc. CACSD'96 Symposium, Dearborn, MI, pp. 473-476, 1996.</a></p>
+			<dd>Robust and performant numerical software for control systems analysis and design, such as the SLICOT and RASP libraries, is an essential ingredient in modern CACSD design. SLICOT, realised by WGS in cooperation with NAG, can primarily be viewed as a mathematical library for control theoretical computations. To avoid duplicating the implementation efforts of good quality software existing elsewhere, WGS and DLR, originator of the RASP control engineering library, have agreed to integrate these libraries into a joint standard control library. Making the product now freely available will ensure a wider and faster distribution of these computational tools and will make the much needed software more easily accessible to European industry in the short term. detailed plans have been developed for the instigation of a thematic network on numerics in control with the intention of extending the scope of cooperation to a European level.
+			<dt>&nbsp;
+		</dl>
+		<hr noshade color="#666666">
+		<h4>5. Computer Aided Control Systems Design</h4>
+		<p>
+		<hr noshade color="#666666">
+		<dl>
+			<dt><a href="varga_ascc94p3-1.pdf"><b>A. Varga, J. Bals, and G. Gr&uuml;bel</b><br>
+			<em>Integrated Model-Reduction Facilities in the Computational Control Design Environment ANDECS</em><br>
+			Proc. Asian Control Conference, Tokyo, Japan, vol. 3, pp. 81-84, 1994.</a>
+			<dd><br>
+			<dd>The paper presents the new integrated model-reduction facilities available in the control engineering design environment ANDECS. The suite of interactive model reduction modules is based on a new generation of numerically reliable algorithms to solve model reduction and associated problems. The model reduction tools complement the already existing system analysis and design tools in ANDECS and strongly benefit of the advanced simulation and visualisation aids, and the multi-objective programming facilities for parametric studies already available there.
+		</dl>
+		<hr noshade color="#666666">
+		<address>Ad van den Boom,&nbsp; February 26, 2002</address>
+<address>Updated: Vasile Sima,</a>&nbsp; August 12, 2005;&nbsp; February 4, 2023</address>
+<p>
