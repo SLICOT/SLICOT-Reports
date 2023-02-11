@@ -2,7 +2,7 @@
 
 ## About 
 
-The `SLICOT Reports` (`SLICOT-SystemIdentification`) contains [SLICOT](https://github.com/SLICOT/SLICOT-Reference/)-related reports and few papers.
+The `SLICOT Reports` (`SLICOT-Reports`) contains [SLICOT](https://github.com/SLICOT/SLICOT-Reference/)-related reports and few papers.
 
 The reports and papers are accessible for downloading from (https://github.com/SLICOT/SLICOT-Reports/reports.html).
 
